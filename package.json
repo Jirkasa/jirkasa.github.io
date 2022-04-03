@@ -1,0 +1,24 @@
+{
+  "name": "my-portfolio-website",
+  "version": "1.0.0",
+  "description": "My portfolio website.",
+  "main": "index.js",
+  "scripts": {
+    "compile:less": "lessc ./less/main.less ./assets/css/style.css",
+    "nodemon:compile:less": "nodemon -e less -x \"npm run compile:less\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jirkasa/my-portfolio-website.git"
+  },
+  "author": "Jiří Satora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jirkasa/my-portfolio-website/issues"
+  },
+  "homepage": "https://github.com/Jirkasa/my-portfolio-website#readme",
+  "devDependencies": {
+    "less": "^4.1.2",
+    "nodemon": "^2.0.15"
+  }
+}
