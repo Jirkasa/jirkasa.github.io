@@ -1,0 +1,47 @@
+.header {
+    background-color: @colors[grey-80];
+    padding: 1.2rem 3.2rem;
+
+    &__content {
+        width: 100%;
+        max-width: @grid-width;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        font-weight: 700;
+
+        color: @colors[primary];
+        text-transform: uppercase;
+    }
+
+    &__navigation {
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        li:not(:last-child) {
+            margin-right: 2.4rem;
+        }
+    }
+
+    &__navigation-item {
+        &:link, &:visited {
+            font-size: 1.6rem;
+            line-height: 1.6rem;
+            font-weight: 700;
+
+            color: @colors[white];
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+}

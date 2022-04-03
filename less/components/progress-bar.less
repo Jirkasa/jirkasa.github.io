@@ -1,0 +1,26 @@
+.progress-bar {
+    padding: 1rem 1.6rem;
+    background-color: @colors[grey-20];
+    position: relative;
+
+    &__percentage {
+        font-size: 2rem;
+        line-height: 2rem;
+        font-weight: 700;
+
+        color: @colors[white];
+
+        position: relative;
+        z-index: 5;
+    }
+
+    &__bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+
+        background-color: @colors[primary];
+    }
+}
