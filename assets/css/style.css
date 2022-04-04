@@ -170,6 +170,7 @@ body {
   color: #FFF;
   position: relative;
   z-index: 5;
+  transition: all 0.5s 0.7s;
 }
 .progress-bar__bar {
   position: absolute;
@@ -178,6 +179,14 @@ body {
   width: 0;
   height: 100%;
   background-color: #25C750;
+  transition: all 3s 0.2s;
+  max-width: 100%;
+}
+.progress-bar--hidden .progress-bar__percentage {
+  opacity: 0;
+}
+.progress-bar--hidden .progress-bar__bar {
+  max-width: 0;
 }
 .project-card {
   height: 32.2rem;

@@ -12,6 +12,8 @@
 
         position: relative;
         z-index: 5;
+
+        transition: all .5s .7s;
     }
 
     &__bar {
@@ -22,5 +24,18 @@
         height: 100%;
 
         background-color: @colors[primary];
+
+        transition: all 3s .2s;
+        max-width: 100%;
+    }
+
+    &--hidden {
+
+    }
+    &--hidden &__percentage {
+        opacity: 0;
+    }
+    &--hidden &__bar {
+        max-width: 0;
     }
 }
