@@ -9,8 +9,10 @@
     &--fixed {
         position: fixed;
         width: 100%;
+        max-width: @max-page-width;
         top: 0;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     &__content {

@@ -79,8 +79,10 @@ body {
 .header--fixed {
   position: fixed;
   width: 100%;
+  max-width: 180rem;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .header__content {
   width: 100%;
@@ -279,6 +281,7 @@ body {
 }
 .intro-section {
   height: 100vh;
+  max-height: 105rem;
   background-color: #646F67;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/img/NoImage.png");
   background-size: cover;
