@@ -69,6 +69,7 @@ body {
 .header {
   background-color: #262927;
   padding: 1.2rem 3.2rem;
+  z-index: 30;
 }
 .header--fixed {
   position: fixed;
@@ -107,6 +108,10 @@ body {
   color: #FFF;
   text-transform: uppercase;
   text-decoration: none;
+  transition: all 0.1s;
+}
+.header__navigation-item:hover {
+  color: #25C750;
 }
 .footer {
   font-size: 1.6rem;
@@ -236,6 +241,10 @@ body {
   text-transform: uppercase;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.hook {
+  position: relative;
+  bottom: 5.6rem;
 }
 .intro-section {
   height: 100vh;

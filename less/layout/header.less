@@ -2,6 +2,8 @@
     background-color: @colors[grey-80];
     padding: 1.2rem 3.2rem;
 
+    z-index: 30;
+
     &--fixed {
         position: fixed;
         width: 100%;
@@ -49,6 +51,12 @@
             color: @colors[white];
             text-transform: uppercase;
             text-decoration: none;
+
+            transition: all .1s;
+        }
+
+        &:hover {
+            color: @colors[primary];
         }
     }
 }
