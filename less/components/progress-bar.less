@@ -3,6 +3,8 @@
     background-color: @colors[grey-20];
     position: relative;
 
+    user-select: none;
+
     &__percentage {
         font-size: 2rem;
         line-height: 2rem;
@@ -13,7 +15,7 @@
         position: relative;
         z-index: 5;
 
-        transition: all .5s .7s;
+        transition: all .5s .2s;
     }
 
     &__bar {
@@ -25,13 +27,10 @@
 
         background-color: @colors[primary];
 
-        transition: all 3s .2s;
+        transition: all 3s .2s ease-out;
         max-width: 100%;
     }
 
-    &--hidden {
-
-    }
     &--hidden &__percentage {
         opacity: 0;
     }

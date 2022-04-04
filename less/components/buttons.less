@@ -10,5 +10,17 @@
         background-color: @colors[primary];
         text-transform: uppercase;
         text-decoration: none;
+
+        user-select: none;
+
+        transition: all .1s;
+    }
+
+    &:hover {
+        background-color: darken(@colors[primary], 5%);
+    }
+
+    &:active {
+        background-color: darken(@colors[primary], 10%);
     }
 }

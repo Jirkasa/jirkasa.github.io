@@ -42,6 +42,10 @@ body {
   line-height: 2.4rem;
   color: #646F67;
 }
+::selection {
+  background-color: #25C750;
+  color: #FFF;
+}
 .u-mb-1 {
   margin-bottom: 0.8rem !important;
 }
@@ -70,6 +74,7 @@ body {
   background-color: #262927;
   padding: 1.2rem 3.2rem;
   z-index: 30;
+  user-select: none;
 }
 .header--fixed {
   position: fixed;
@@ -151,6 +156,14 @@ body {
   background-color: #25C750;
   text-transform: uppercase;
   text-decoration: none;
+  user-select: none;
+  transition: all 0.1s;
+}
+.button-primary:hover {
+  background-color: #21b147;
+}
+.button-primary:active {
+  background-color: #1d9c3f;
 }
 .horizontal-rule {
   border: none;
@@ -162,6 +175,7 @@ body {
   padding: 1rem 1.6rem;
   background-color: #E9F4EC;
   position: relative;
+  user-select: none;
 }
 .progress-bar__percentage {
   font-size: 2rem;
@@ -170,7 +184,7 @@ body {
   color: #FFF;
   position: relative;
   z-index: 5;
-  transition: all 0.5s 0.7s;
+  transition: all 0.5s 0.2s;
 }
 .progress-bar__bar {
   position: absolute;
@@ -179,7 +193,7 @@ body {
   width: 0;
   height: 100%;
   background-color: #25C750;
-  transition: all 3s 0.2s;
+  transition: all 3s 0.2s ease-out;
   max-width: 100%;
 }
 .progress-bar--hidden .progress-bar__percentage {
@@ -243,6 +257,10 @@ body {
   text-overflow: ellipsis;
   margin-bottom: 0.8rem;
 }
+.project-card__name::selection {
+  background-color: #FFF;
+  color: #25C750;
+}
 .project-card__technologies {
   font-size: 2rem;
   line-height: 2rem;
@@ -251,6 +269,10 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.project-card__technologies::selection {
+  background-color: #FFF;
+  color: #25C750;
+}
 .hook {
   position: relative;
   bottom: 5.6rem;
@@ -258,6 +280,9 @@ body {
 .intro-section {
   height: 100vh;
   background-color: #646F67;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/img/NoImage.png");
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
 }
@@ -311,6 +336,11 @@ body {
 .about-section__image {
   grid-column: 1 / span 6;
   background-color: #646F67;
+}
+.about-section__image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .about-section__content {
   grid-column: 7 / span 7;
