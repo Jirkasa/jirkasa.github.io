@@ -24,4 +24,10 @@
     &:active {
         background-color: darken(@colors[primary], 10%);
     }
+
+    &--animated {
+        &:link, &:visited {
+            animation: scaleIn .3s .6s ease-out both;
+        }
+    }
 }
