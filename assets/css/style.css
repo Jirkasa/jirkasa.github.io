@@ -160,6 +160,11 @@ body {
     padding: 0;
   }
 }
+@media print {
+  .header {
+    display: none;
+  }
+}
 .header--fixed {
   position: fixed;
   width: 100%;
