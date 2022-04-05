@@ -21,12 +21,13 @@
                 <div class="intro-section__welcome-text u-mb-4">
                     <p class="paragraph u-text-white">Vítejte. Já jsem Jirka a věnuji se tvorbě webových stránek a aplikací. Najdete zde odkazy na všechny webové stránky, které jsem vytvořil a pár informací o mně.</p>
                 </div>
-                <a href="#" class="button-primary">O mně</a>
+                <a href="#o-mne" class="button-primary">O mně</a>
             </div>
             <div class="intro-section__header">
                 <header class="header">
                     <div class="header__content">
                         <div class="header__title">Jiří Satora</div>
+                        <input type="checkbox" id="navigation" class="nav-checkbox">
                         <nav class="header__navigation">
                             <ul>
                                 <li><a href="#nejlepsi-projekty" class="header__navigation-item">Nejlepší projekty</a></li>
@@ -36,6 +37,9 @@
                                 <li><a href="#portfolio" class="header__navigation-item">Portfolio</a></li>
                             </ul>
                         </nav>
+                        <label for="navigation" class="nav-toggle-button">
+                            <div class="nav-toggle-button__icon"></div>
+                        </label>
                     </div>
                 </header>
             </div>
@@ -59,7 +63,7 @@
                     </div>
                 </div>
                 <hr class="horizontal-rule u-mb-4">
-                <div class="project u-mb-4">
+                <div class="project">
                     <div class="project__image">
                         <img src="./assets/img/portfolio/WebDesignTahak.png" alt="projekt Web Design Tahák">
                     </div>
@@ -81,48 +85,50 @@
                 <h2 class="heading-secondary u-mb-3">O mně</h2>
                 <p class="paragraph u-mb-2">Jsem velmi zapálený do tvorby webových stránek a webových aplikací. S programováním jsem začal, protože jsem se chtěl naučit tvořit hry. Vyzkoušel jsem toho víc a věnoval jsem se například hernímu enginu Unity, modelování 3D objektů v Blenderu, a tak podobně. S tím jsem ale nakonec přestal a postupně se přesunul k tvorbě webových stránek a webových aplikací, což je pro mě lepší. Pokud dělám hry, tak již jen webové. Na programování mě baví, že můžu vytvořit v podstatě cokoliv a jediné co k tomu potřebuji je počítač a internetové připojení. Protože se věnuji webovému programování, tak je mým oblíbeným programovacím jazykem JavaScript. S jeho pomocí jde na webu vytvořit snad cokoliv.</p>
                 <p class="paragraph u-mb-4">Mým cílem je stát se webovým programátorem a věnovat se tvorbě webových stránek profesionálně. Také bych chtěl někdy dokončit svoji webovou hru, kterou mám již delší dobu rozdělanou, ale nepracuji na ní, protože mi na ní záleží. Chci ji udělat pořádně, proto se chci ještě pár věcí naučit, než se do její tvorby zase pustím.</p>
-                <div class="favourite-part u-mb-4">
-                    <div class="favourite-part__icon">
-                        <svg>
-                            <use xlink:href="./assets/img/icon-sprite.svg#icon-cool"></use>
-                        </svg>
+                <div class="favourite-section">
+                    <div class="favourite-part">
+                        <div class="favourite-part__icon">
+                            <svg>
+                                <use xlink:href="./assets/img/icon-sprite.svg#icon-cool"></use>
+                            </svg>
+                        </div>
+                        <div class="favourite-part__content">
+                            <h3 class="heading-tertiary u-mb-1">Oblíbené aktivity</h3>
+                            <p class="paragraph">Programování, hraní na PlayStationu, cvičení</p>
+                        </div>
                     </div>
-                    <div class="favourite-part__content">
-                        <h3 class="heading-tertiary u-mb-1">Oblíbené aktivity</h3>
-                        <p class="paragraph">Programování, hraní na PlayStationu, cvičení</p>
+                    <div class="favourite-part">
+                        <div class="favourite-part__icon">
+                            <svg>
+                                <use xlink:href="./assets/img/icon-sprite.svg#icon-terminal"></use>
+                            </svg>
+                        </div>
+                        <div class="favourite-part__content">
+                            <h3 class="heading-tertiary u-mb-1">Oblíbený programovací jazyk</h3>
+                            <p class="paragraph">JavaScript</p>
+                        </div>
                     </div>
-                </div>
-                <div class="favourite-part u-mb-4">
-                    <div class="favourite-part__icon">
-                        <svg>
-                            <use xlink:href="./assets/img/icon-sprite.svg#icon-terminal"></use>
-                        </svg>
+                    <div class="favourite-part">
+                        <div class="favourite-part__icon">
+                            <svg>
+                                <use xlink:href="./assets/img/icon-sprite.svg#icon-headphones"></use>
+                            </svg>
+                        </div>
+                        <div class="favourite-part__content">
+                            <h3 class="heading-tertiary u-mb-1">Oblíbená hudba</h3>
+                            <p class="paragraph">Beartooth</p>
+                        </div>
                     </div>
-                    <div class="favourite-part__content">
-                        <h3 class="heading-tertiary u-mb-1">Oblíbený programovací jazyk</h3>
-                        <p class="paragraph">JavaScript</p>
-                    </div>
-                </div>
-                <div class="favourite-part u-mb-4">
-                    <div class="favourite-part__icon">
-                        <svg>
-                            <use xlink:href="./assets/img/icon-sprite.svg#icon-headphones"></use>
-                        </svg>
-                    </div>
-                    <div class="favourite-part__content">
-                        <h3 class="heading-tertiary u-mb-1">Oblíbená hudba</h3>
-                        <p class="paragraph">Beartooth</p>
-                    </div>
-                </div>
-                <div class="favourite-part">
-                    <div class="favourite-part__icon">
-                        <svg>
-                            <use xlink:href="./assets/img/icon-sprite.svg#icon-spoon-knife"></use>
-                        </svg>
-                    </div>
-                    <div class="favourite-part__content">
-                        <h3 class="heading-tertiary u-mb-1">Oblíbené jídlo</h3>
-                        <p class="paragraph">Pizza</p>
+                    <div class="favourite-part">
+                        <div class="favourite-part__icon">
+                            <svg>
+                                <use xlink:href="./assets/img/icon-sprite.svg#icon-spoon-knife"></use>
+                            </svg>
+                        </div>
+                        <div class="favourite-part__content">
+                            <h3 class="heading-tertiary u-mb-1">Oblíbené jídlo</h3>
+                            <p class="paragraph">Pizza</p>
+                        </div>
                     </div>
                 </div>
             </div>

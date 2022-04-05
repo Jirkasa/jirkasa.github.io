@@ -1,5 +1,6 @@
 import makeStickyHeader from './modules/stickyHeader.js';
 import ElementsObserver from './modules/elementsObserver.js';
+import automaticUncheckOnClick from './modules/automaticUncheckOnClick.js';
 
 // STICKY HEADER
 makeStickyHeader(document.querySelector('.intro-section__header'), document.querySelector('.header'), 'header--fixed');
@@ -15,3 +16,6 @@ const observer = new ElementsObserver(0.9, () => {
 for (let progressBar of animatedProgressBars) {
     observer.observe(progressBar, 'progress-bar--hidden', 'removeOnEnter');
 }
+
+// HEADER NAVIGATION
+automaticUncheckOnClick(document.getElementById('navigation'), document.querySelector('.header__navigation ul'), '.header__navigation-item');
