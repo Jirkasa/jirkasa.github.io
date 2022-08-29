@@ -1,6 +1,1 @@
-.progress-bar--hidden .progress-bar__percentage {
-    opacity: 1;
-}
-.progress-bar--hidden .progress-bar__bar {
-    max-width: 100%;
-}
+.progress-bar--hidden .progress-bar__percentage{opacity:1}.progress-bar--hidden .progress-bar__bar{max-width:100%}
