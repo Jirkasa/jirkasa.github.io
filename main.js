@@ -1,2 +1,3 @@
 import './less/main.less';
-import './js/home';
+import './js/main';
+import './icons/main.js';
