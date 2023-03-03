@@ -10,6 +10,13 @@ function createNavigationToggle(navigationToggleButton, navigation, navigationOp
         navigationToggleButton.classList.toggle(navigationOpenedButtonCSSClass);
         navigation.classList.toggle(navigationOpenedCSSClass);
     });
+
+    navigation.addEventListener("click", (evt) => {
+        if (evt.target.tagName === "A") {
+            navigationToggleButton.classList.remove(navigationOpenedButtonCSSClass);
+            navigation.classList.remove(navigationOpenedCSSClass);
+        }
+    });
 }
 
 export default createNavigationToggle;

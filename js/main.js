@@ -1,6 +1,7 @@
 import createNavigationToggle from "./createNavigationToggle";
 import createProjectsSwitch from "./createProjectsSwitch";
 import makeStickyHeader from "./makeStickyHeader";
+import SmoothScroll from "smooth-scroll";
 
 makeStickyHeader(
     document.getElementById("HeaderContainer"),
@@ -19,4 +20,8 @@ createNavigationToggle(
     document.getElementById("Navigation"),
     "navigation-toggle-button--checked",
     "header__navigation--opened"
-)
+);
+
+new SmoothScroll('a[href*="#"]', {
+    offset: 48
+});
