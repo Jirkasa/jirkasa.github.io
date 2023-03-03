@@ -15,6 +15,7 @@
         font-size: 0;
 
         width: 10.8rem;
+        flex-shrink: 0;
 
         background-color: @colors[grey-20];
         border: .1rem solid @colors[grey-40];
@@ -23,6 +24,10 @@
         padding: .5rem;
 
         cursor: pointer;
+
+        @media (max-width: #pxToEm(395)[]) {
+            width: 10.8rem - 3.2rem;
+        }
     }
 
     &__input-circle {
@@ -38,5 +43,9 @@
 
     &__input--on > &__input-circle {
         transform: translateX(6.4rem);
+
+        @media (max-width: #pxToEm(395)[]) {
+            transform: translateX(3.2rem);
+        }
     }
 }

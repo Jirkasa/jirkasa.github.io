@@ -1,12 +1,17 @@
 .intro-section {
     height: ~"calc(100vh - @{header-height})";
     max-height: 80rem;
+    min-height: 50rem;
 
     background-color: @colors[grey-20];
 
     padding: 3.2rem 3.2rem 0;
 
     position: relative;
+
+    #respond-phone({
+        padding: 3.2rem 2.4rem 0;
+    });
 
     // LINE DECORATION
     &::before {
@@ -22,6 +27,26 @@
         background-size: 48%;
         background-position: top left;
         background-repeat: no-repeat;
+
+        @media (max-width: #pxToEm(900)[]) {
+            display: none;
+        }
+        @media (max-width: #pxToEm(890)[]) and (min-height: #pxToEm(730)[]) {
+            display: block;
+            background-position: left 80%;
+            background-size: 70%;
+        }
+        @media (max-width: #pxToEm(750)[]) {
+            display: none;
+            background-size: 90%;
+            background-position: left 80%;
+        }
+        @media (max-width: #pxToEm(750)[]) and (min-height: #pxToEm(950)[]) {
+            display: block;
+        }
+        @media (max-width: #pxToEm(600)[]) and (min-height: #pxToEm(600)[]) {
+            display: block;
+        }
     }
 
     // WRITING DECORATION
@@ -38,6 +63,13 @@
         background-size: 45%;
         background-position: top right;
         background-repeat: no-repeat;
+
+        @media (max-width: #pxToEm(900)[]) {
+            background-size: 55%;
+        }
+        @media (max-width: #pxToEm(750)[]) {
+            background-size: 80%;
+        }
     }
 
     &__content {
@@ -52,6 +84,10 @@
         gap: @grid-gutter;
 
         padding-bottom: 3.2rem;
+
+        @media (max-width: #pxToEm(890)[]) {
+            gap: 0;
+        };
     }
 
     &__image {
@@ -60,6 +96,10 @@
         border: .2rem solid @colors[grey-80];
         border-radius: .4rem;
         overflow: hidden;
+
+        @media (max-width: #pxToEm(890)[]) {
+            display: none;
+        }
 
         img {
             object-fit: cover;
@@ -76,6 +116,21 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @media (max-width: #pxToEm(1100)[]) {
+            grid-column: span 8;
+        }
+        @media (max-width: #pxToEm(890)[]) {
+            grid-column: span 12;
+            text-align: center;
+
+            max-width: 60rem;
+            margin: 0 auto;
+
+            .buttons-row {
+                justify-content: center;
+            }
+        }
     }
 
     &__social-links {
@@ -86,6 +141,10 @@
         display: flex;
         align-items: flex-end;
         gap: 2.4rem;
+
+        #respond-phone({
+            gap: 1.6rem;
+        });
     }
 }
 
@@ -100,6 +159,21 @@
 
     &__text-side {
         grid-column: span 7;
+    }
+
+    &__photo {
+        display: none;
+
+        width: 100%;
+        max-width: 40rem;
+        margin: 0 auto;
+
+        border: .2rem solid @colors[grey-80];
+        border-radius: .4rem;
+
+        @media (max-width: #pxToEm(890)[]) {
+            display: block;
+        }
     }
 
     &__favourites-side {
