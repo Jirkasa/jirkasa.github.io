@@ -1,5 +1,7 @@
 .intro-section {
     height: ~"calc(100vh - @{header-height})";
+    max-height: 80rem;
+
     background-color: @colors[grey-20];
 
     padding: 3.2rem 3.2rem 0;
@@ -90,12 +92,28 @@
 .about-section {
     #display-12-grid();
 
+    @media (max-width: #pxToEm(1000)[]) {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+
     &__text-side {
         grid-column: span 7;
     }
 
     &__favourites-side {
         grid-column: span 5;
+
+        @media (max-width: #pxToEm(1000)[]) {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 3.2rem;
+        }
+        @media (max-width: #pxToEm(700)[]) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__favourite-section {
@@ -120,6 +138,11 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 3.2rem;
+
+    @media (max-width: #pxToEm(950)[]) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .projects-section {
@@ -137,6 +160,17 @@
             flex-direction: row;
         }
 
+        @media (max-width: #pxToEm(1000)[]) {
+            &, &:nth-child(2n) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            > :last-child {
+                align-self: center;
+            }
+        }
+
         > * {
             flex: 2 0;
         }
@@ -144,5 +178,9 @@
 
     &__project-image {
         width: 100%;
+
+        @media (max-width: #pxToEm(1000)[]) {
+            max-width: 60rem;
+        }
     }
 }
