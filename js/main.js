@@ -2,6 +2,7 @@ import createNavigationToggle from "./createNavigationToggle";
 import createProjectsSwitch from "./createProjectsSwitch";
 import makeStickyHeader from "./makeStickyHeader";
 import SmoothScroll from "smooth-scroll";
+import AOS from 'aos';
 
 makeStickyHeader(
     document.getElementById("HeaderContainer"),
@@ -25,3 +26,5 @@ createNavigationToggle(
 new SmoothScroll('a[href*="#"]', {
     offset: 48
 });
+
+AOS.init();

@@ -26,6 +26,23 @@ module.exports = merge(commonConfig, {
                 ]
             },
             {
+                test: /\.css$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    "css-loader",
+                    {
+                        loader: "postcss-loader",
+                        options: {
+                            postcssOptions: {
+                                plugins: [
+                                    ["postcss-preset-env", {}]
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            {
                 test: /\.js$/,
                 exclude: /(node_modules)/,
                 use: {
