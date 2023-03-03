@@ -1,0 +1,53 @@
+.social-link-button {
+    &:link, &:visited {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 2.8rem;
+
+        background-color: @colors[white];
+        color: @colors[grey-80];
+        border-top-left-radius: .4rem;
+        border-top-right-radius: .4rem;
+        text-decoration: none;
+        
+        padding: .8rem 1.6rem;
+
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+
+        transition: all .2s;
+
+        @media (max-width: #pxToEm(350)[]) {
+            gap: 0;
+        }
+    }
+
+    svg {
+        width: 2rem;
+        height: 2rem;
+        fill: @colors[grey-80];
+
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: @colors[primary];
+        color: @colors[white];
+
+        svg {
+            fill: @colors[white];
+        }
+    }
+
+    &:focus-visible {
+        outline: .3rem solid @colors[grey-80];
+        outline-offset: -.2rem;
+    }
+
+    span {
+        @media (max-width: #pxToEm(350)[]) {
+            font-size: 0;
+        }
+    }
+}

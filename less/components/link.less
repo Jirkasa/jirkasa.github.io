@@ -1,0 +1,20 @@
+.link {
+    &:link, &:visited {
+        color: @colors[primary];
+        text-decoration: underline;
+
+        border-radius: .4rem;
+
+        transition: all .1s;
+    }
+
+    &:hover {
+        color: @colors[white];
+        background-color: @colors[primary];
+    }
+
+    &:focus-visible {
+        outline: .3rem solid @colors[grey-80];
+        border-radius: .4rem;
+    }
+}
