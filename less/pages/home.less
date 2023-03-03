@@ -97,6 +97,8 @@
         border-radius: .4rem;
         overflow: hidden;
 
+        animation: fadeInUp 1s ease-in-out both;
+
         @media (max-width: #pxToEm(890)[]) {
             display: none;
         }
@@ -117,6 +119,8 @@
         flex-direction: column;
         justify-content: center;
 
+        animation: fadeInLeft .5s .7s ease-in both;
+
         @media (max-width: #pxToEm(1100)[]) {
             grid-column: span 8;
         }
@@ -126,6 +130,8 @@
 
             max-width: 60rem;
             margin: 0 auto;
+
+            animation: fadeInUp .5s ease-in-out both;
 
             .buttons-row {
                 justify-content: center;
@@ -141,6 +147,8 @@
         display: flex;
         align-items: flex-end;
         gap: 2.4rem;
+
+        animation: fadeInUp 1s .7s ease-in-out both;
 
         #respond-phone({
             gap: 1.6rem;
