@@ -1,0 +1,27 @@
+.section {
+    padding: 3.2rem;
+
+    #respond-phone({
+        padding: 3.2rem 2.4rem;
+    });
+
+    &--grey-background {
+        background-color: @colors[grey-20];
+    }
+
+    &--with-background-image {
+        background-image: url("../../css-images/LineBackgroundDecoration.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0 45%;
+
+        @media (max-width: #pxToEm(950)[]) {
+            background-image: none;
+        }
+    }
+    
+    &__content {
+        margin: 0 auto;
+        max-width: @grid-width;
+    }
+}
