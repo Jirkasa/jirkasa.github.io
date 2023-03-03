@@ -133,4 +133,8 @@
 .header-container {
     background-color: @colors[grey-80];
     height: @header-height;
+
+    @media print {
+        display: none;
+    }
 }
