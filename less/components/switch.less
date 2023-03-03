@@ -1,0 +1,42 @@
+.switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+
+    &__label {
+        font-size: 2rem;
+        line-height: 2.8rem;
+
+        color: @colors[grey-60];
+    }
+
+    &__input {
+        font-size: 0;
+
+        width: 10.8rem;
+
+        background-color: @colors[grey-20];
+        border: .1rem solid @colors[grey-40];
+        border-radius: 2.2rem;
+
+        padding: .5rem;
+
+        cursor: pointer;
+    }
+
+    &__input-circle {
+        display: block;
+        width: 3.2rem;
+        height: 3.2rem;
+
+        background-color: @colors[primary];
+        border-radius: 50%;
+
+        transition: all .2s;
+    }
+
+    &__input:hover > &__input-circle {
+        transform: translateX(6.4rem);
+    }
+}

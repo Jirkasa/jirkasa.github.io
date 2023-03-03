@@ -1,0 +1,46 @@
+.header {
+    height: @header-height;
+
+    background-color: @colors[grey-80];
+
+    &__content {
+        margin: 0 auto;
+        max-width: @grid-width;
+        height: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        &:link, &:visited {
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 1;
+    
+            text-transform: uppercase;
+            text-decoration: none;
+            color: @colors[primary-light];
+        }
+    }
+
+    &__navigation {
+        ul {
+            display: flex;
+            gap: 2.4rem;
+        }
+    }
+
+    &__navigation-item {
+        &:link, &:visited {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 3.2rem;
+
+            text-transform: uppercase;
+            text-decoration: none;
+            color: @colors[white];
+        }
+    }
+}

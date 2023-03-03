@@ -7,6 +7,7 @@ import "./git.svg";
 import "./github.svg";
 import "./headphones.svg";
 import "./javascript.svg";
+import "./less.svg";
 import "./linkedin.svg";
 import "./nodejs.svg";
 import "./react.svg";

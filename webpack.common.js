@@ -29,7 +29,7 @@ module.exports = {
                                 {
                                     name: 'removeAttrs',
                                     params: {
-                                        attrs: '*:fill:(none|black)'
+                                        attrs: ['*:fill:(none|black)', '*:stroke:(none|black)']
                                     }
                                 }
                             ]

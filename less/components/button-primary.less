@@ -1,0 +1,47 @@
+.button-primary {
+    &, &:link, &:visited {
+        font-family: inherit;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 2.8rem;
+
+        background-color: @colors[primary];
+        color: @colors[white];
+        border-radius: .4rem;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+
+        padding: .8rem 1.6rem;
+    }
+
+    svg {
+        width: 1.6rem;
+        height: 1.6rem;
+        fill: @colors[white];
+    }
+
+    &--outlined {
+        &, &:link, &:visited {
+            border: .1rem solid @colors[primary];
+            background-color: transparent;
+            color: @colors[primary];
+    
+            padding: .7rem 1.5rem;
+        }
+
+        svg {
+            fill: @colors[primary];
+        }
+    }
+
+    &--bigger-icon {
+        svg {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}
