@@ -5,12 +5,25 @@
  * @param {string} switchButtonOnCSSClass CSS class to be applied to switch button when switched.
  */
 function createProjectsSwitch(projectsContainer, switchButton, switchButtonOnCSSClass) {
+    const projects = [];
+    for (let project of projectsContainer.children) {
+        projects.push(project);
+    }
+
     let displayAllProjects = false;
 
     const updateProjectsVisibility = () => {
-        for (let project of projectsContainer.children) {
+        for (let project of projects) {
+            project.remove();
+        }
+
+        for (let project of projects) {
             if (project.dataset.isProjectBest !== "true") {
-                project.style.display = displayAllProjects ? "flex" : "none";
+                if (displayAllProjects) {
+                    projectsContainer.appendChild(project);
+                }
+            } else {
+                projectsContainer.appendChild(project);
             }
         }
     }
