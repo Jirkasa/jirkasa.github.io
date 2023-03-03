@@ -40,6 +40,11 @@
         }
     }
 
+    &:focus-visible {
+        outline: .3rem solid @colors[grey-80];
+        outline-offset: -.2rem;
+    }
+
     span {
         @media (max-width: #pxToEm(350)[]) {
             font-size: 0;

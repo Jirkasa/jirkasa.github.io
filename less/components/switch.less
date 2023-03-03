@@ -25,6 +25,11 @@
 
         cursor: pointer;
 
+        &:focus-visible {
+            outline: .3rem solid @colors[grey-80];
+            outline-offset: -.2rem;
+        }
+
         @media (max-width: #pxToEm(395)[]) {
             width: 10.8rem - 3.2rem;
         }

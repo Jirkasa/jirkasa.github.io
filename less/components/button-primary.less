@@ -24,6 +24,11 @@
         background-color: darken(@colors[primary], 13%);
     }
 
+    &:focus-visible {
+        outline: .3rem solid @colors[grey-80];
+        outline-offset: -.2rem;
+    }
+
     svg {
         width: 1.6rem;
         height: 1.6rem;

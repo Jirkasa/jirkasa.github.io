@@ -10,6 +10,12 @@
 
     cursor: pointer;
 
+    &:focus-visible {
+        outline: .3rem solid @colors[white];
+        outline-offset: .2rem;
+        border-radius: .4rem;
+    }
+
     @media (max-width: @navigation-breakpoint) {
         display: block;
     }

@@ -52,6 +52,12 @@
             text-decoration: none;
             color: @colors[primary-light];
         }
+
+        &:focus-visible {
+            outline: .3rem solid @colors[white];
+            outline-offset: .2rem;
+            border-radius: .4rem;
+        }
     }
 
     &__navigation {
@@ -83,7 +89,10 @@
                 flex-wrap: wrap;
             }
 
+            pointer-events: none;
+
             &--opened {
+                pointer-events: unset;
                 transform: translateZ(-1px) translateY(100%);
             }
         }
@@ -111,6 +120,12 @@
 
         &:hover {
             color: @colors[primary-light];
+        }
+
+        &:focus-visible {
+            outline: .3rem solid @colors[white];
+            outline-offset: .2rem;
+            border-radius: .4rem;
         }
     }
 }
