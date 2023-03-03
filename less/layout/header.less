@@ -1,7 +1,15 @@
 .header {
+    width: 100%;
     height: @header-height;
 
     background-color: @colors[grey-80];
+
+    &--fixed {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
     &__content {
         margin: 0 auto;
@@ -43,4 +51,9 @@
             color: @colors[white];
         }
     }
+}
+
+.header-container {
+    background-color: @colors[grey-80];
+    height: @header-height;
 }
