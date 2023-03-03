@@ -102,9 +102,15 @@
             text-decoration: none;
             color: @colors[white];
 
+            transition: all .1s;
+
             @media (max-width: @navigation-breakpoint) {
                 line-height: 2rem;
             }
+        }
+
+        &:hover {
+            color: @colors[primary-light];
         }
     }
 }

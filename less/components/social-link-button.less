@@ -16,6 +16,8 @@
         align-items: center;
         gap: .8rem;
 
+        transition: all .2s;
+
         @media (max-width: #pxToEm(350)[]) {
             gap: 0;
         }
@@ -25,6 +27,17 @@
         width: 2rem;
         height: 2rem;
         fill: @colors[grey-80];
+
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: @colors[primary];
+        color: @colors[white];
+
+        svg {
+            fill: @colors[white];
+        }
     }
 
     span {

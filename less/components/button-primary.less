@@ -16,6 +16,12 @@
         gap: .8rem;
 
         padding: .8rem 1.6rem;
+
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: darken(@colors[primary], 13%);
     }
 
     svg {
@@ -35,6 +41,17 @@
 
         svg {
             fill: @colors[primary];
+
+            transition: all .2s;
+        }
+
+        &:hover {
+            background-color: darken(@colors[primary], 13%);
+            color: @colors[white];
+
+            svg {
+                fill: @colors[white]
+            }
         }
     }
 
