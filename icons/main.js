@@ -14,5 +14,6 @@ import "./react.svg";
 import "./search.svg";
 import "./spoon-knife.svg";
 import "./threejs.svg";
+import "./typescript.svg";
 import "./user.svg";
 import "./webpack.svg";
