@@ -6,6 +6,7 @@ import "./figma.svg";
 import "./git.svg";
 import "./github.svg";
 import "./headphones.svg";
+import "./java.svg";
 import "./javascript.svg";
 import "./less.svg";
 import "./linkedin.svg";
