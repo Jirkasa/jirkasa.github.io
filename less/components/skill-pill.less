@@ -1,0 +1,26 @@
+.skill-pill {
+    font-size: 2rem;
+    line-height: 1;
+
+    display: inline-flex;
+    gap: .4rem;
+
+    color: @colors[white];
+    background-color: @colors[primary];
+    border-radius: 1.6rem;
+
+    padding: .8rem 1.2rem;
+
+    svg {
+        width: 2rem;
+        height: 2rem;
+        fill: @colors[white];
+    }
+
+    &--icon-stroke {
+        svg {
+            fill: none;
+            stroke: @colors[white];
+        }
+    }
+}

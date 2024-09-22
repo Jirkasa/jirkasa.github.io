@@ -1,0 +1,212 @@
+.projects-search {
+    display: flex;
+    align-items: stretch;
+
+    @media (max-width: #pxToEm(500)[]) {
+        flex-direction: column;
+    }
+
+    &__search-bar {
+        position: relative;
+        font-size: 0;
+        flex: 2;
+    }
+
+    &__search-icon {
+        position: absolute;
+        left: 1.6rem;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 2rem;
+        height: 2rem;
+
+        svg {
+            width: 100%;
+            height: 100%;
+            fill: @colors[grey-60];
+        }
+    }
+
+    &__search-input {
+        font-family: inherit;
+        font-size: 2rem;
+        line-height: 2.8rem;
+
+        width: 100%;
+
+        border: .1rem solid @colors[grey-40];
+        background-color: @colors[grey-10];
+        border-top-left-radius: .4rem;
+        border-bottom-left-radius: .4rem;
+        color: @colors[grey-80];
+
+        height: 4.4rem;
+        padding: 0 1.5rem;
+        padding-left: 2rem + 3.2rem;
+        padding-right: 2rem + 1.6rem;
+
+        outline-color: @colors[grey-80];
+
+        @media (max-width: #pxToEm(500)[]) {
+            border-bottom-left-radius: 0;
+            border-top-right-radius: .4rem;
+        }
+    }
+
+    &__clear-search-button {
+        font-size: 0;
+
+        position: absolute;
+        right: .8rem;
+        top: 50%;
+        transform: translateY(-50%) scale(0);
+
+        background-color: transparent;
+        border: none;
+        border-radius: .4rem;
+
+        width: 2rem;
+        height: 2rem;
+
+        outline-color: @colors[grey-80];
+        cursor: pointer;
+
+        transition: transform .2s;
+
+        &--visible {
+            transform: translateY(-50%) scale(1);
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            fill: @colors[primary-dark];
+        }
+    }
+
+    &__sort-select {
+        position: relative;
+    }
+
+    &__sort-select-button {
+        font-family: inherit;
+        text-align: left;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.2rem;
+
+        padding: 0 1.5rem;
+        min-width: 16rem;
+        height: 4.4rem;
+
+        border: .1rem solid @colors[grey-40];
+        border-left: none;
+        background-color: @colors[grey-10];
+        border-top-right-radius: .4rem;
+        border-bottom-right-radius: .4rem;
+        color: @colors[grey-60];
+
+        white-space: nowrap;
+
+        outline-color: @colors[grey-80];
+        cursor: pointer;
+
+        transition: all .2s;
+
+        &:hover {
+            background-color: darken(@colors[grey-10], 5%);
+        }
+
+        @media (max-width: #pxToEm(500)[]) {
+            border-left: .1rem solid @colors[grey-40];
+            border-top: none;
+            width: 100%;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: .4rem;
+        }
+    }
+
+    &__sort-select-button-text {
+        display: flex;
+        flex-direction: column;
+
+        pointer-events: none;
+    }
+
+    &__sort-by-text {
+        font-size: 1.2rem;
+        line-height: 1;
+    }
+
+    &__sort-text {
+        font-size: 1.6rem;
+        line-height: 1;
+    }
+
+    &__sort-select-button-icon {
+        width: 2.4rem;
+        height: 2.4rem;
+
+        pointer-events: none;
+
+        svg {
+            width: 100%;
+            height: 100%;
+            fill: @colors[grey-60];
+        }
+    }
+
+    &__sort-select-options {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        transform: translate(-.1rem, -.1rem);
+
+        width: 100%;
+
+        background-color: @colors[grey-10];
+        border: .1rem solid @colors[grey-40];
+        border-radius: .4rem;
+        border-top-left-radius: 0;
+    }
+
+    &__sort-select-option {
+        font-size: 1.6rem;
+        line-height: 1;
+        text-align: left;
+
+        display: block;
+        width: 100%;
+
+        cursor: pointer;
+
+        color: @colors[grey-60];
+        background-color: @colors[grey-10];
+        border: none;
+        box-shadow: 0 .4rem 1rem rgba(@colors[grey-80], .2);
+
+        padding: .8rem 1.6rem;
+
+        transition: all .2s;
+
+        &:not(:last-child) {
+            border-bottom: .1rem solid @colors[grey-40];
+        }
+
+        &:first-child {
+            border-top-right-radius: .4rem;
+        }
+
+        &:last-child {
+            border-bottom-left-radius: .4rem;
+            border-bottom-right-radius: .4rem;
+        }
+
+        &:hover {
+            background-color: darken(@colors[grey-10], 5%);
+        }
+    }
+}

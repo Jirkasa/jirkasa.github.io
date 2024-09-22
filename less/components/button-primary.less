@@ -20,6 +20,7 @@
         transition: all .2s;
 
         user-select: none;
+        cursor: pointer;
     }
 
     &:hover {
@@ -66,6 +67,26 @@
         svg {
             width: 2rem;
             height: 2rem;
+        }
+    }
+
+    &--small {
+        &, &:link, &:visited {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+
+            padding: .4rem 1.2rem;
+        }
+
+        svg {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+    }
+    &--small&--bigger-icon {
+        svg {
+            width: 1.6rem;
+            height: 1.6rem;
         }
     }
 }

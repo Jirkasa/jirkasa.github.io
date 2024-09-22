@@ -1,0 +1,107 @@
+.projects-list {
+    background-color: @colors[grey-10];
+    border: .1rem solid @colors[grey-40];
+    border-radius: .4rem;
+
+    &__item {
+
+        &:not(:last-child) {
+            border-bottom: .1rem solid @colors[grey-40];
+        }
+    }
+
+    &__item-button {
+        font-family: inherit;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.2rem;
+        width: 100%;
+
+        background-color: transparent;
+        border: none;
+
+        padding: 1.1rem 1.5rem;
+
+        cursor: pointer;
+
+        transition: background-color .2s;
+
+        &:hover {
+            background-color: darken(@colors[grey-10], 5%);
+        }
+    }
+
+    &__item-name {
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+    }
+
+    &__item-icon {
+        flex-shrink: 0;
+        width: 2rem;
+        height: 2rem;
+
+        svg {
+            width: 100%;
+            height: 100%;
+            fill: @colors[grey-80];
+        }
+    }
+
+    &__project-name {
+        font-size: 2rem;
+        line-height: 1;
+        font-weight: 700;
+        text-align: left;
+
+        color: @colors[grey-80];
+
+        &--deprecated {
+            text-decoration: line-through;
+            text-decoration-color: @colors[primary];
+        }
+    }
+
+    &__dropdown-icon {
+        width: 2.4rem;
+        height: 2.4rem;
+
+        transition: transform .2s;
+
+        svg {
+            width: 100%;
+            height: 100%;
+            fill: @colors[grey-60];
+        }
+    }
+
+    &__item-button--opened &__dropdown-icon {
+        transform: rotate(180deg);
+    }
+
+    &__item-collapsible {
+
+    }
+
+    &__item-content {
+        padding: 0 1.6rem 1.2rem 1.6rem;
+    }
+
+    &__item-buttons {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 1.2rem;
+        row-gap: .8rem;
+    }
+
+    &__horizontal-rule {
+        border: none;
+        background-color: @colors[grey-40];
+        width: 100%;
+        height: .1rem;
+    }
+}

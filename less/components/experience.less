@@ -1,0 +1,75 @@
+.experience {
+    display: flex;
+    gap: 2.4rem;
+
+    @media (max-width: #pxToEm(700)[]) {
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    &__year-side {
+        flex: 0 0 15.4rem;
+
+        @media (max-width: #pxToEm(700)[]) {
+            flex-basis: 0;
+        }
+    }
+
+    &__content-side {
+        flex: 2;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    &__year {
+        font-size: 2rem;
+        line-height: 1;
+        text-align: right;
+
+        display: block;
+
+        color: @colors[grey-60];
+
+        position: relative;
+
+        @media (max-width: #pxToEm(700)[]) {
+            text-align: left;
+        }
+
+        &::after {
+            content: "";
+
+            position: absolute;
+            left: 0;
+            top: 100%;
+            transform: translateY(.4rem);
+
+            width: 100%;
+            height: .1rem;
+            
+            background-color: @colors[grey-40];
+        }
+    }
+
+    &__heading {
+        display: flex;
+        gap: .8rem;
+
+        margin-bottom: .8rem;
+
+        svg {
+            flex: 0 0 2.4rem;
+            height: 2.4rem;
+            fill: @colors[grey-80];
+        }
+
+        h3 {
+            flex: 1 1 auto;
+            font-size: 2.4rem;
+            line-height: 1;
+            font-weight: 700;
+
+            color: @colors[grey-80];
+        }
+    }
+}
