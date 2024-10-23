@@ -12,6 +12,13 @@ Project object properties:
 
 const projects = [
     {
+        name: "Předpověď počasí",
+        type: "WEBAPP",
+        technologies: ["HTML", "CSS", "TypeScript", "Webpack"],
+        webURL: "https://jirkasa.github.io/predpoved-pocasi/",
+        sourceCodeURL: "https://github.com/Jirkasa/predpoved-pocasi"
+    },
+    {
         name: "Code Box",
         type: "LIBRARY",
         technologies: ["HTML", "CSS", "TypeScript", "Webpack"],
