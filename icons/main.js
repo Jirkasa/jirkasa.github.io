@@ -16,6 +16,7 @@ import "./less.svg";
 import "./linkedin.svg";
 import "./nodejs.svg";
 import "./package.svg";
+import "./person-book.svg";
 import "./person.svg";
 import "./react.svg";
 import "./school.svg";
