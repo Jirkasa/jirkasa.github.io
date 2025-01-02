@@ -56,7 +56,8 @@ const projects = [
         type: "GAME",
         technologies: ["HTML", "CSS", "JS", "Three.js", "PHP", "MySQL", "Webpack"],
         webURL: "https://kure-na-silnici.4fan.cz/",
-        sourceCodeURL: "https://github.com/Jirkasa/rocnikova-prace"
+        sourceCodeURL: "https://github.com/Jirkasa/rocnikova-prace",
+        notice: "Hra obsahuje možnost registrace a přihlášení, ale je to jen takové provizorní. Neověřuje se žádný e-mail, není možné obnovit heslo, není to zabezpečené proti útokům hrubou silou (nejsou nastaveny limity pro počet pokusů o přihlášení), a tak dále."
     },
     {
         name: "Three.js návod",
@@ -153,7 +154,8 @@ const projects = [
         name: "Piš všemi deseti",
         type: "WEBAPP",
         technologies: ["HTML", "CSS", "JS", "PHP"],
-        webURL: "https://pis-vsemi-deseti.4fan.cz/"
+        webURL: "https://pis-vsemi-deseti.4fan.cz/",
+        notice: "Web obsahuje možnost registrace a přihlášení, ale je to jen takové provizorní. Neověřuje se žádný e-mail, není možné obnovit heslo, není to zabezpečené proti útokům hrubou silou (nejsou nastaveny limity pro počet pokusů o přihlášení), a tak dále."
     },
     {
         name: "MySQL tahák",
