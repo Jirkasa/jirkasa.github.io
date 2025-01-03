@@ -1,5 +1,6 @@
 import "./arrow-down.svg";
 import "./briefcase.svg";
+import "./brush.svg";
 import "./close.svg";
 import "./css.svg";
 import "./database.svg";
