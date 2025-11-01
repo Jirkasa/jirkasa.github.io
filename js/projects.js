@@ -14,7 +14,7 @@ const projects = [
     {
         name: "Předpověď počasí",
         type: "WEBAPP",
-        technologies: ["HTML", "CSS", "TypeScript", "Webpack"],
+        technologies: ["HTML", "CSS", "TypeScript", "React", "Webpack"],
         webURL: "https://jirkasa.github.io/predpoved-pocasi/",
         sourceCodeURL: "https://github.com/Jirkasa/predpoved-pocasi"
     },
