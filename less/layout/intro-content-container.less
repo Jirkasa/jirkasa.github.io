@@ -1,0 +1,15 @@
+.intro-content-container {
+    #display-12-grid();
+
+    &__content {
+        grid-column: 3 / span 8;
+
+        @media (max-width: #pxToEm(1100)[]) {
+            grid-column: 2 / span 10;
+        }
+
+        @media (max-width: #pxToEm(650)[]) {
+            grid-column: span 12;
+        }
+    }
+}
